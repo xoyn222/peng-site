@@ -1,0 +1,97 @@
+/* Основной стиль для карточек */
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 250px; /* Фиксированная ширина карточки */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+    box-sizing: border-box; /* Чтобы padding не увеличивал ширину */
+    margin: 80px 10px 10px; /* Отступ сверху, чтобы не перекрывать хедер */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Равномерное распределение элементов */
+    height: 450px; /* Фиксированная высота для всех карточек */
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Контейнер для изображения */
+.image-container {
+    width: 100%;
+    height: 250px; /* Фиксированная высота изображения */
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Анимация увеличения при наведении */
+.product-card:hover .image-container img {
+    transform: scale(1.05);
+}
+
+/* Информация о продукте */
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* Ограничиваем высоту заголовка */
+.product-name {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: 500;
+    height: 40px; /* Фиксированная высота для всех названий */
+    /*overflow: hidden; /* Обрезаем текст, если он не помещается */
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Ограничиваем текст двумя строками */
+    -webkit-box-orient: vertical;
+}
+
+/* Стилизуем цену продукта */
+.product-price {
+    font-size: 16px;
+    margin: 20px 0;
+    color: #555;
+    align-self: center;
+}
+
+/* Стиль кнопки */
+.add-to-cart {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: auto; /* Кнопка всегда снизу */
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.add-to-cart:hover {
+    background-color: #333;
+}
+
+/* Контейнер для карточек */
+.product-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}

@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.header .logo {
+    flex-grow: 1;
+    text-align: center;
+    cursor: pointer;
+}
+
+.header .logo img {
+    height: 40px; /* Высота логотипа */
+}
+
+.left-icons,
+.right-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Расстояние между иконками */
+}
+
+.menu-icon img,
+.search-icon img,
+.cart-icon img {
+    width: 24px; /* Ширина иконок */
+    height: 24px; /* Высота иконок */
+    cursor: pointer; /* Курсор при наведении */
+    transition: opacity 0.3s ease; /* Плавный переход для эффекта наведения */
+}
+
+.menu-icon img:hover,
+.search-icon img:hover,
+.cart-icon img:hover {
+    opacity: 0.7; /* Изменение прозрачности при наведении */
+}
+
+.left-icons {
+    cursor: pointer; /* Указатель на меню */
+}
+
+.right-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.right-icons div {
+    cursor: pointer;
+}
