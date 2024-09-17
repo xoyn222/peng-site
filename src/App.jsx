@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./comp/Header/Header.jsx";
 import Card from "./comp/Card/Card.jsx"; // Импортируем карточки товаров
 import {assets} from "./assets/assets";
+import "./App.css"
 
 const App = () => {
     // Массив с товарами

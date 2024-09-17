@@ -3,27 +3,30 @@
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 20px;
-    width: 250px; /* Фиксированная ширина карточки */
+    position: relative;
+    width: 350px; /* Фиксированная ширина карточки */
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background-color: white;
     box-sizing: border-box; /* Чтобы padding не увеличивал ширину */
-    margin: 80px 10px 10px; /* Отступ сверху, чтобы не перекрывать хедер */
+    margin: 80px 20px 20px; /* Отступ сверху, чтобы не перекрывать хедер */
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Равномерное распределение элементов */
-    height: 450px; /* Фиксированная высота для всех карточек */
+    height: 550px; /* Фиксированная высота для всех карточек */
+    z-index: 1
 }
 
 .product-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 999;
 }
 
 /* Контейнер для изображения */
 .image-container {
     width: 100%;
-    height: 250px; /* Фиксированная высота изображения */
+    height: 350px; /* Фиксированная высота изображения */
     overflow: hidden;
     margin-bottom: 15px;
 }
@@ -51,7 +54,7 @@
 
 /* Ограничиваем высоту заголовка */
 .product-name {
-    font-size: 18px;
+    font-size: 20px;
     margin: 10px 0;
     font-weight: 500;
     height: 40px; /* Фиксированная высота для всех названий */
@@ -63,7 +66,7 @@
 
 /* Стилизуем цену продукта */
 .product-price {
-    font-size: 16px;
+    font-size: 18px;
     margin: 20px 0;
     color: #555;
     align-self: center;
