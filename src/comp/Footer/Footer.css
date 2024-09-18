@@ -89,11 +89,12 @@
 
     /* Равные отступы между всеми элементами */
     .footer-left, .footer-center, .footer-right, .footer-social, .back-to-top {
-        margin-bottom: 10px; /* Одинаковый отступ снизу */
+
         text-align: center;   /* Центрируем текст */
     }
 
     .footer-social {
+        margin-top: 10px;
         margin-bottom: 5px;
     }
 
@@ -108,6 +109,6 @@
 
     /* Центрирование иконок соцсетей */
     .footer-social li {
-        margin: 0 10px;
+        margin: 10px 20px;
     }
 }
