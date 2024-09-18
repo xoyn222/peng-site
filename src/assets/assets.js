@@ -6,6 +6,8 @@ import jeans from './jeans.png'
 import hood from './hood.png'
 import long from './long.png'
 import t_shirt from './t_shirt.png'
+import inst from './inst.png'
+import telegram from './telegram.png'
 
 export const assets = {
     menu_icon,
@@ -15,7 +17,9 @@ export const assets = {
     hood,
     search_icon,
     jeans,
-    t_shirt
+    t_shirt,
+    inst,
+    telegram
 
 }
 

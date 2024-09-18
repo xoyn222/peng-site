@@ -3,6 +3,7 @@ import Header from "./comp/Header/Header.jsx";
 import Card from "./comp/Card/Card.jsx"; // Импортируем карточки товаров
 import {assets} from "./assets/assets";
 import "./App.css"
+import Footer from "./comp/Footer/Footer";
 
 const App = () => {
     // Массив с товарами
@@ -37,6 +38,7 @@ const App = () => {
                     <Card key={index} product={product} />
                 ))}
             </div>
+            <Footer />
         </>
     );
 };

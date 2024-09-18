@@ -1,0 +1,113 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px; /* Меньший отступ для контроля высоты */
+    background-color: #fff;
+    font-size: 14px;
+    color: #000;
+    height: 80px; /* Фиксированная высота футера */
+    box-sizing: border-box; /* Включаем padding в расчет высоты */
+}
+
+.footer-left p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.footer-left a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.footer-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.footer-social {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-social li {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.footer-social li a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social li img {
+    width: 25px;
+    height: 25px;
+}
+
+.footer-right {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.back-to-top {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.back-to-top span {
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 15px 10px;
+    }
+
+    /* Равные отступы между всеми элементами */
+    .footer-left, .footer-center, .footer-right, .footer-social, .back-to-top {
+        margin-bottom: 10px; /* Одинаковый отступ снизу */
+        text-align: center;   /* Центрируем текст */
+    }
+
+    .footer-social {
+        margin-bottom: 5px;
+    }
+
+    .footer-left, .footer-right, .footer-center {
+        flex: none;
+    }
+
+    /* Увеличиваем размер текста и кнопок для удобства */
+    .footer-email p, .back-to-top {
+        font-size: 16px;
+    }
+
+    /* Центрирование иконок соцсетей */
+    .footer-social li {
+        margin: 0 10px;
+    }
+}
