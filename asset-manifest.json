@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/peng-site/static/css/main.88d090bd.css",
-    "main.js": "/peng-site/static/js/main.4eb76aed.js",
+    "main.css": "/peng-site/static/css/main.71adae70.css",
+    "main.js": "/peng-site/static/js/main.6b78f5a3.js",
     "static/media/t_shirt.png": "/peng-site/static/media/t_shirt.d7a53608a76eea91e767.png",
     "static/media/hood.png": "/peng-site/static/media/hood.ac03719c53c6112c4dac.png",
     "static/media/long.png": "/peng-site/static/media/long.eb94de6429c257134687.png",
@@ -10,11 +10,11 @@
     "static/media/shopping_cart.png": "/peng-site/static/media/shopping_cart.af96b324ab2d5fa9e70a.png",
     "static/media/bl.png": "/peng-site/static/media/bl.823d4b9cb65349b74bee.png",
     "index.html": "/peng-site/index.html",
-    "main.88d090bd.css.map": "/peng-site/static/css/main.88d090bd.css.map",
-    "main.4eb76aed.js.map": "/peng-site/static/js/main.4eb76aed.js.map"
+    "main.71adae70.css.map": "/peng-site/static/css/main.71adae70.css.map",
+    "main.6b78f5a3.js.map": "/peng-site/static/js/main.6b78f5a3.js.map"
   },
   "entrypoints": [
-    "static/css/main.88d090bd.css",
-    "static/js/main.4eb76aed.js"
+    "static/css/main.71adae70.css",
+    "static/js/main.6b78f5a3.js"
   ]
 }
